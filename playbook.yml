@@ -5,6 +5,4 @@
     - name: Install nginx
       ansible.builtin.apt:
         name: nginx
-        cache_valid_time: 3600
-        update_cache: true
         state: present
