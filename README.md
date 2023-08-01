@@ -4,7 +4,7 @@ This repository is a demo of how to use [Molecule](https://molecule.readthedocs.
 
 This repository complements my blog post [Testing Ansible Content with Molecule](https://danielbrennand.com/blog/testing-ansible-content).
 
-The [playbook](playbook.yml) in this repository installs [Nginx](https://www.nginx.com/) on a Debian-based Linux distribution.
+The [playbook](playbook.yml) in this repository installs [Nginx](https://www.nginx.com/). The [default](molecule/default) molecule scenario tests the playbook against a Debian-based Linux distribution. The Docker driver is used to create the Debian-based container instance.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ The [playbook](playbook.yml) in this repository installs [Nginx](https://www.ngi
     pip install -r requirements.txt
     ```
 
-2. Run the test sequence with Molecule:
+2. Run the full test sequence with Molecule:
 
     ```bash
     molecule test
