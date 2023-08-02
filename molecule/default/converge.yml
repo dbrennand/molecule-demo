@@ -1,0 +1,6 @@
+---
+- name: Converge
+  hosts: all
+
+- name: Run playbook.yml
+  ansible.builtin.import_playbook: ../../playbook.yml

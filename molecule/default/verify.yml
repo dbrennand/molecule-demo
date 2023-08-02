@@ -1,0 +1,10 @@
+---
+- name: Verify
+  hosts: all
+  tasks:
+    - name: Gather package list
+      ansible.builtin.package_facts:
+
+    - name: Verify nginx is installed
+      ansible.builtin.assert:
+        that: "'nginx' in ansible_facts.packages"
