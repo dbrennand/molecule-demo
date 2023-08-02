@@ -2,4 +2,5 @@
 - name: Converge
   hosts: all
 
-- ansible.builtin.import_playbook: ../../playbook.yml
+- name: Run playbook.yml
+  ansible.builtin.import_playbook: ../../playbook.yml
